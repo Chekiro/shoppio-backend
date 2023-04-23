@@ -41,7 +41,7 @@ public class User implements UserDetails {
 
     @PrePersist
     public void prePersist() {
-        this.created_at = LocalDateTime.now(); // Set current date and time as 'created_at'
+        this.created_at = LocalDateTime.now();
 
     }
 
