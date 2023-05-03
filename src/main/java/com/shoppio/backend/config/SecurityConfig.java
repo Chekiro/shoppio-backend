@@ -28,7 +28,7 @@ public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
     http
             .cors().and()
             .authorizeHttpRequests()
-            .requestMatchers("/api/auth/**").permitAll()
+            .requestMatchers("/api/auth/**","/api/**").permitAll()
             .anyRequest()
             .authenticated()
             .and()
