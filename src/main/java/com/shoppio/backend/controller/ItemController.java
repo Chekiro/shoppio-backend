@@ -56,8 +56,8 @@ public class ItemController {
                     case "price":
                         itemToUpdate.setPrice((Double) value);
                         break;
-                    case "priceBefore":
-                        itemToUpdate.setPriceBefore((Double) value);
+                    case "discount":
+                        itemToUpdate.setDiscount((Double) value);
                         break;
                     case "rating":
                         itemToUpdate.setRating((Integer) value);

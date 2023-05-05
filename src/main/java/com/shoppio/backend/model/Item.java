@@ -27,8 +27,8 @@ public class Item {
     @Column(name = "price",nullable = false)
     private Double price;
 
-    @Column(name = "price_before")
-    private Double priceBefore;
+    @Column(name = "discount")
+    private Double discount;
 
     @Column(name = "rating")
     private Integer rating;
@@ -39,7 +39,7 @@ public class Item {
     @Column(name ="image",nullable = false)
     private String image;
 
-    @Column(name ="description",nullable = false)
+    @Column(name ="description",nullable = false, length = 700)
     private String description;
 
     @Column(name = "added_time", nullable = false, updatable = false)
